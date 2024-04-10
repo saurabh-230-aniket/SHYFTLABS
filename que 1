@@ -3,21 +3,24 @@ using namespace std;
 
 int main() 
 {
-    vector<int>vec;
+    vector<int> vec;
     int n;
-    cin>>n;
-    for(int i=0;i<n;i++)
+    cin >> n; // Read the number of elements in the vector
+    for(int i = 0; i < n; i++)
     {
-      int element;
-      cin>>element;
-      vec.push_back(element);
+        int element;
+        cin >> element; // Read each element
+        vec.push_back(element); // Add the element to the end of the vector
     }
-    for(int i=0;i<n;i++)
+    for(int i = 0; i < n; i++)
     {
-      if(vec[i]==-1)
-      {
-        cout<<i<<endl;
-      }
+        if(vec[i] == -1)
+        {
+            cout << i << endl; // Output the index of -1
+        }
     }
     return 0;
 }
+The time complexity of iterating over the vector to find and print the index of -1 elements is also O(n).
+Thus, the overall time complexity is O(n)
+The space complexity is O(n) because we are using a vector to store n integers
